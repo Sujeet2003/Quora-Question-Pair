@@ -5,38 +5,38 @@ This project focuses on building a machine learning pipeline to detect duplicate
 # Key Features
 `1. Dataset`
 
-The dataset contains question pairs and their labels (1 for duplicates, 0 for non-duplicates).
+- The dataset contains question pairs and their labels (1 for duplicates, 0 for non-duplicates).
 
-Size: 400,000+ rows, making it suitable for testing scalability and performance.
+- Size: 400,000+ rows, making it suitable for testing scalability and performance.
 
 `2. Preprocessing Techniques`
 
-Basic Text Cleaning:
-Removed unnecessary symbols, lowercased text, and stripped whitespace.
+- Basic Text Cleaning:
+    - Removed unnecessary symbols, lowercased text, and stripped whitespace.
 
-Stopword Removal:
-Reduced noise in the data by removing common words using the NLTK library.
+- Stopword Removal:
+    - Reduced noise in the data by removing common words using the NLTK library.
 
-Tokenization:
-Split questions into tokens for further analysis.
+- Tokenization:
+    - Split questions into tokens for further analysis.
 
 
 `3. Feature Engineering`
 
 a. Length-Based Features
 
-Length of Questions: Captures the total and absolute difference in length.
+- Length of Questions: Captures the total and absolute difference in length.
 
-Word Counts: Counts and compares the number of words in both questions.
+- Word Counts: Counts and compares the number of words in both questions.
 
-Longest Substring Ratio: Measures the ratio of the longest common substring.
+- Longest Substring Ratio: Measures the ratio of the longest common substring.
 
 
 b. Token Features
 
-Common words, stopwords, and token counts (e.g., common words divided by the minimum and maximum token counts).
+- Common words, stopwords, and token counts (e.g., common words divided by the minimum and maximum token counts).
 
-Binary features indicating if the first/last words are the same.
+- Binary features indicating if the first/last words are the same.
 
 
 c. Fuzzy Features
