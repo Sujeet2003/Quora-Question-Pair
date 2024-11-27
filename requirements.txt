@@ -16,7 +16,7 @@ idna==3.9
 joblib==1.4.2
 Levenshtein==0.26.1
 nltk==3.9.1
-numpy==2.1.1
+numpy
 opencv-python==4.10.0.84
 packaging==24.1
 pandas==2.2.2
