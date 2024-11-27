@@ -2,9 +2,12 @@
   "version": 2,
   "builds": [
     {
-      "src": "Quora/wsgi.py",
+      "src": "Portfolio/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    },
+    {
+      "src": "build_files.sh"
     }
   ],
   "routes": [
@@ -14,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "Quora/wsgi.py"
+      "dest": "Portfolio/wsgi.py"
     }
   ]
 }
