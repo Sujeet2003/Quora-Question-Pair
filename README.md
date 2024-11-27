@@ -65,3 +65,13 @@ Provided 80% accuracy, comparable to Random Forest.
 - Achieved 80% accuracy with both Random Forest and XGBoost.
 - Confusion Matrix Analysis:
 Random Forest had better precision and recall for duplicate questions.
+
+
+`Outputs`
+![Screenshot 2024-11-27 212119](https://github.com/user-attachments/assets/aae32e1d-b5aa-4ba2-b71a-9585a091364b)
+
+
+
+`Webpage Demo Link: ` https://quora-question-pair.onrender.com/
+`KAGGLE`: https://www.kaggle.com/code/sujeet2003/quora-question-pair-bow
+`Feel free to reach out at: ` sujeetsmpatel@gmail.com
