@@ -5,6 +5,7 @@ This project focuses on building a machine learning pipeline to detect duplicate
 # Key Features
 `1. Dataset`
 The dataset contains question pairs and their labels (1 for duplicates, 0 for non-duplicates).
+
 Size: 400,000+ rows, making it suitable for testing scalability and performance.
 
 `2. Preprocessing Techniques`
