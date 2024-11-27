@@ -38,3 +38,4 @@ threadpoolctl
 tqdm
 tzdata
 urllib3
+whitenoise
