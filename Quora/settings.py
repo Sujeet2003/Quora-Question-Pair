@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Quora.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR, "template"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,12 +74,24 @@ WSGI_APPLICATION = 'Quora.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'quora_question_pair',  # Database name
+        'USER': 'quora_question_pair_user',  # Username
+        'PASSWORD': 'a7aDMbk4fE7DjknowrvWR2rxnwI21ye2',  # Password
+        'HOST': 'dpg-ct3heg23esus73f784eg-a.oregon-postgres.render.com',  # Host address
+        'PORT': '5432',  # Default PostgreSQL port
     }
 }
+
 
 
 # Password validation
