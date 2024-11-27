@@ -2,7 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "Quora/wsgi.py",
+      "src": "build_files.sh",  
+      "use": "@vercel/static-build",  
+      "config": {
+        "distDir": "staticfiles"
+      }
+    },
+    {
+      "src": "Quora/wsgi.py", 
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
